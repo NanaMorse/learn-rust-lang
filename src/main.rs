@@ -35,6 +35,7 @@ fn main() {
         }
 
         // Diverging functions
+        // todo what's the meaning for using panic?
         fn diverges() {
             panic!("This Function Never returns");
         }
@@ -44,5 +45,39 @@ fn main() {
         f = plus_one;
 
         let seven = f(6);
+    }
+
+    // primitive types
+    {
+        // bool
+        let x = true;
+        let y: bool = false;
+
+        // char
+        let char_x = 'x';
+
+        // several numbers
+
+        // array
+        let array_a = [1, 2, 3];
+        let array_b = [12; 20];
+
+        // get array length
+        let array_a_length = array_a.len();
+
+        // get array element
+        let element_of_array = array_a[2];
+
+        // todo slices
+
+        // todo str
+
+        // tuples
+        let tuples_a = (1, "test");
+        let tuples_b: (i32, char) = (2, 'c');
+
+        let elem_a = tuples_a.0;
+        let elem_b = tuples_a.1;
+
     }
 }
